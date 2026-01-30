@@ -1,0 +1,145 @@
+/* Reset mínimo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #faf7f2;
+  color: #5a4a3c;
+  padding: 2rem 1rem;
+}
+
+/* Panel general */
+
+.panel {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f6efe5;
+  border-radius: 24px;
+  padding: 2rem 2rem 2.5rem;
+  border: 1px solid #e2d3bc;
+}
+
+/* Header */
+
+.panel-header h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* Filtros */
+
+.panel-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.filtro {
+  border: 1px solid #d2b98f;
+  background: transparent;
+  color: #7a6343;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filtro.activo {
+  background: #d2b98f;
+  color: #ffffff;
+}
+
+/* Lista */
+
+.panel-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Bloque confirmación */
+
+.confirmacion {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e2d3bc;
+}
+
+/* Header de cada confirmación */
+
+.confirmacion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.6rem;
+}
+
+.estado {
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #9c7c4c;
+}
+
+.cantidad {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  color: #8b7453;
+}
+
+/* Lista de personas */
+
+.personas {
+  margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.persona {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.persona-nombre {
+  font-weight: 500;
+}
+
+.persona-dieta {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* Mensaje */
+
+.mensaje {
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+  border-top: 1px dashed #d2b98f;
+  font-size: 0.8rem;
+}
+
+.mensaje strong {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+  color: #9c7c4c;
+}
