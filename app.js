@@ -1,5 +1,5 @@
 const SHEET_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0FIBsssQ3WPH8FjhHD05f7tek_0C7F-RYrPqE4lP26XbiUvlbK7S455So61ZA2-a2vHeU7Dkf63hF/pub?output=csv";
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0FIBsssQ3WPH8FjhHD05f7tek_0C7F-RYrPqE4lP26XbiUvlbK7S455So61ZA2-a2vHeU7Dkf63hF/pub?output=csv&nocache=" + Date.now();
 
 const lista = document.querySelector(".panel-lista");
 let todasLasConfirmaciones = [];
@@ -120,5 +120,6 @@ function activarFiltros() {
     });
   });
 }
+
 
 
